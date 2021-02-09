@@ -1,12 +1,13 @@
 #ifndef STACK_HEADER_INCLUDED
 #define STACK_HEADER_INCLUDED
 #include <iostream>
+
 template <typename T>
 class stack
 {
   public:
   T value;
-  stack<T>* link;
+  stack* link;
   stack<T>* top_node = NULL;
   void push(T val);
   void pop();
